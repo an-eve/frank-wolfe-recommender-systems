@@ -197,3 +197,37 @@ def plot_losses_and_gaps(losses, gaps):
     
     plt.tight_layout()
     plt.show()
+
+
+def plot_losses_and_gaps_comparison(step_size_methods, losses_dict, gaps_dict):
+    """
+    Plots the loss function and dual gap over iterations for different step size methods.
+    
+    Parameters:
+        step_size_methods (list): List of step size method names.
+        losses_dict (dict): Dictionary where keys are step size method names and values are lists of loss function values.
+        gaps_dict (dict): Dictionary where keys are step size method names and values are lists of dual gap values.
+    """
+    fig, ax = plt.subplots(2, 1, figsize=(8, 10), sharex=True)
+    
+    # Plot loss function for each step size method
+    for method in step_size_methods:
+        iterations = range(1, len(losses_dict[method]) + 1)
+        ax[0].plot(iterations, losses_dict[method], linestyle='-', label=method)
+    ax[0].set_ylabel("Loss Function")
+    ax[0].set_title("Loss Function Over Iterations")
+    ax[0].legend()
+    ax[0].grid(True)
+    
+    # Plot dual gap for each step size method
+    for method in step_size_methods:
+        iterations = range(1, len(gaps_dict[method]) + 1)
+        ax[1].plot(iterations, gaps_dict[method], linestyle='-', label=method)
+    ax[1].set_xlabel("Iteration")
+    ax[1].set_ylabel("Dual Gap")
+    ax[1].set_title("Dual Gap Over Iterations")
+    ax[1].legend()
+    ax[1].grid(True)
+    
+    plt.tight_layout()
+    plt.show()
