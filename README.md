@@ -6,6 +6,7 @@ This project demonstrates the application of the Frank-Wolfe algorithm to optimi
 
 The repository is organized as follows:
 
+```
 Frank-Wolfe-Recommender-Systems/
 ├── data/                               # Placeholder for dataset files
 ├── FW Recommendation Systems Slides/
@@ -28,7 +29,7 @@ Frank-Wolfe-Recommender-Systems/
 ├── .gitignore                          # Git ignore file
 ├── main.ipynb                          # Jupyter notebook for experimentation
 ├── utils.py                            # Python utility functions for matrix completion
-
+```
 
 
 ## Datasets
