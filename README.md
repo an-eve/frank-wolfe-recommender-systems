@@ -12,18 +12,12 @@ Frank-Wolfe-Recommender-Systems/
 ├── FW Recommendation Systems Slides/
 │   ├── image/
 │   ├── include/
-│   │   ├── preamble.tex                # LaTeX preamble
-│   │   ├── references.bib              # Bibliography file
-│   │   ├── titlepage.tex               # Title page content
 │   └── main.tex                        # Main LaTeX file for slides
 │   └── FW_Recommendation_Systems_Slides.pdf # PDF version of the presentation
 ├── Report FW Recommender Systems/
 │   ├── images/
-│   │   ├── anime_loss_gap.png          # Visualization of Anime dataset results
-│   │   ├── movielens_loss_gap.png      # Visualization of MovieLens dataset results
 │   ├── include/
 │   ├── logo/
-│   │   └── unipdlogo.png               # Project logo
 │   └── main.tex                        # Main LaTeX file for the report
 │   └── Report_FW_Recommender_Systems.pdf # PDF version of the report
 ├── .gitignore                          # Git ignore file
@@ -51,6 +45,7 @@ The project focuses on using the Frank-Wolfe algorithm for matrix completion to 
 - **Matrix Initialization**: Low-rank random initialization normalized to observed data properties.
 - **Step Size Strategies**: Includes diminishing, exact line search, and Armijo rule for step size optimization.
 - **Loss and Dual Gap Monitoring**: Tracks performance over iterations.
+- **Frank-Wolfe Algorithm for Matrix Completion**: Adapted for matrix completion, includes different step size strategies and stopping conditions.
 - **Visualization**: Loss function and dual gap plots for different strategies.
 
 ## Outputs
